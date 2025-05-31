@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sojourni</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f6f6f9; }
+    textarea { width: 100%; height: 100px; margin-bottom: 1rem; }
+    button { padding: 10px 20px; font-size: 16px; }
+    #response { margin-top: 1.5rem; padding: 1rem; background: #fff; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Sojourni: Overthinking Translator</h1>
+  <textarea id="userInput" placeholder="Write your spiraling thought..."></textarea>
+  <select id="tone">
+    <option value="Supportive Friend">Supportive Friend</option>
+    <option value="Emotionally Neutral Observer">Emotionally Neutral Observer</option>
+    <option value="Grounded Rational Thinker">Grounded Rational Thinker</option>
+  </select>
+  <br><br>
+  <button onclick="translate()">Translate Thought</button>
+  <div id="response"></div>
+  <script src="script.js"></script>
+</body>
+</html>
